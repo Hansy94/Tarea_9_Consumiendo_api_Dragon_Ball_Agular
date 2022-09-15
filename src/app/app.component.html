@@ -1,0 +1,26 @@
+
+<br>
+<br>
+<h1 style="margin-left:50px ;">API DRAGON BALL SUPER </h1>
+<br>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3" *ngFor="let personaje of Personajes">
+
+      <div class="card" style="width: 18rem;">
+        <img style="height:400px;" src="{{personaje.imageUrl}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h1 class="card-title">{{personaje.name}}</h1>
+          <h5 class="card-title"> <strong>Especie : </strong>{{personaje.specie}}</h5>
+          <p class="card-text"><strong>Role :</strong> {{personaje.role}}</p>
+          <p class="card-text"> {{personaje.statu}}</p>
+          <p class="card-text"><strong>Universo :</strong> {{personaje.universe}}</p>
+          <p class="card-text"><strong>Planeta de origen :</strong> {{personaje.originplanet}}</p>
+
+           <a href="#" class="btn btn-primary"> Id: {{personaje.id}}</a> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
